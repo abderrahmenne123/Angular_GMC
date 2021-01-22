@@ -14,8 +14,5 @@ adresse='sousse';
   ngOnInit(): void {
   }
   // tslint:disable-next-line:typedef
-  changeName(newName) {
-    //console.log(newName);
-    this.name= newName;
-  }
+ 
 }

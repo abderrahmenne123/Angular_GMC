@@ -12,6 +12,8 @@ import { FormsModule } from '@angular/forms';
 
 import { BindingExampleComponent } from './binding-example/binding-example.component';
 import { MyCheckpointsComponent } from './my-checkpoints/my-checkpoints.component';
+import { CarteVisiteComponent } from './carte-visite/carte-visite.component';
+
 
 @NgModule({
   declarations: [
@@ -24,7 +26,11 @@ import { MyCheckpointsComponent } from './my-checkpoints/my-checkpoints.componen
    
     BindingExampleComponent,
    
-    MyCheckpointsComponent
+    MyCheckpointsComponent,
+   
+    CarteVisiteComponent,
+   
+  
   ],
   imports: [
     BrowserModule,
