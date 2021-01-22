@@ -13,6 +13,8 @@ import { FormsModule } from '@angular/forms';
 import { BindingExampleComponent } from './binding-example/binding-example.component';
 import { MyCheckpointsComponent } from './my-checkpoints/my-checkpoints.component';
 import { CarteVisiteComponent } from './carte-visite/carte-visite.component';
+import { PereComponent } from './pere/pere.component';
+import { FilsComponent } from './fils/fils.component';
 
 
 @NgModule({
@@ -29,6 +31,10 @@ import { CarteVisiteComponent } from './carte-visite/carte-visite.component';
     MyCheckpointsComponent,
    
     CarteVisiteComponent,
+   
+    PereComponent,
+   
+    FilsComponent,
    
   
   ],
