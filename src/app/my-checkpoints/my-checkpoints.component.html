@@ -1,0 +1,19 @@
+<p>My Checkpoints 1</p>
+<br>
+
+<div [style.background-color]="color">{{color}}</div>
+<br>
+<input type="text" name="color" class="form-control"
+
+[(ngModel)]="color"
+
+
+>
+<br>
+<button
+(click)="changeName()"
+
+ class="btn btn-primary">
+
+   Reset
+</button>
