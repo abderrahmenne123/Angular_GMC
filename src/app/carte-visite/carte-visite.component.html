@@ -1,38 +1,170 @@
-<form>
-    <div class="form-group">
-      <label >nom</label>
-      <input type="text" class="form-control"   placeholder="Enter votre nom">
-     
-    </div>
-    <div class="form-group">
-        <label >prénom</label>
-        <input type="text" class="form-control"   placeholder="Enter votre prénom">
-       
+
+<div class="container">
+  <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+
+    <div class="container">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand navbar-brand-logo" href="https://www.creative-tim.com">
+          <div class="logo">
+            <img src="https://s3.amazonaws.com/creativetim_bucket/new_logo.png">
+          </div>
+          <div class="brand"> Creative Tim </div>
+        </a>
       </div>
-      <div class="form-group">
-        <label >jobe</label>
-        <input type="text" class="form-control"  placeholder="Enter votre jobe">
-       
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav navbar-right">
+          <li>
+            <a href="javascript:void(0)" data-href="#howToUse" class="scroll-down">
+              How to Use
+            </a>
+          </li>
+          <li>
+            <a class="btn btn-info" href="https://www.creative-tim.com/product/rotating-css-card" target="_blank">
+              Download, it's free!
+            </a>
+          </li>
+        </ul>
+      </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+  </nav>
+
+  <div class="row">
+    <h1 class="title">
+      This is our awesome team
+      <br>
+      <small>Present your team in an interesting way</small>
+    </h1>
+    <div class="col-sm-10 col-sm-offset-1">
+      <div class="col-md-4 col-sm-6">
+        <div class="card-container">
+          <div class="card">
+            <div class="front">
+              <div class="cover">
+                <img src="/assets/images/rotating_card_thumb2.png"/>
+              </div>
+              <div class="user">
+                <img class="img-circle" src="/assets/images/rotating_card_profile3.png"/>
+              </div>
+              <div class="content">
+                <div class="main">
+                  <h3 class="name">John Marvel</h3>
+                  <p class="profession">CEO</p>
+                  <p class="text-center">"I'm the new Sinatra, and since I made it here I can make it anywhere, yeah, they love me everywhere"</p>
+                </div>
+                <div class="footer">
+                  <i class="fa fa-mail-forward"></i> Auto Rotation
+                </div>
+              </div>
+            </div> <!-- end front panel -->
+            <div class="back">
+              <div class="header">
+                <h5 class="motto">"To be or not to be, this is my awesome motto!"</h5>
+              </div>
+              <div class="content">
+                <div class="main">
+                  <h4 class="text-center">Job Description</h4>
+                  <p class="text-center">Web design, Adobe Photoshop, HTML5, CSS3, Corel and many others...</p>
+
+                  <div class="stats-container">
+                    <div class="stats">
+                      <h4>235</h4>
+                      <p>
+                        Followers
+                      </p>
+                    </div>
+                    <div class="stats">
+                      <h4>114</h4>
+                      <p>
+                        Following
+                      </p>
+                    </div>
+                    <div class="stats">
+                      <h4>35</h4>
+                      <p>
+                        Projects
+                      </p>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+
+
+
+              <div class="footer">
+                <div class="social-links text-center">
+                  <a href="https://creative-tim.com" class="facebook"><i class="fa fa-facebook fa-fw"></i></a>
+                  <a href="https://creative-tim.com" class="google"><i class="fa fa-google-plus fa-fw"></i></a>
+                  <a href="https://creative-tim.com" class="twitter"><i class="fa fa-twitter fa-fw"></i></a>
+                </div>
+              </div>
+
+
+            </div> <!-- end back panel -->
+
+          </div> <!-- end card -->
+        </div> <!-- end card-container -->
+
+      </div> <!-- end col sm 3 -->
+    
+      <div class="col-md-4 col-sm-6">
+        <div class="card-container manual-flip">
+        </div></div>
+      <div class="col-md-4 col-sm-6">
+        <div class="card-container">
+          <form [formGroup]="cartForm" (ngSubmit)="ajouter()">
+            <div class="form-group">
+              <label >nom</label>
+              <input type="text" class="form-control"   placeholder="Enter votre nom" formControlName="nom">
+             
+            </div>
+            <div class="form-group">
+              <label >prénom</label>
+              <input type="text" class="form-control"   placeholder="Enter votre prénom" formControlName="prenom">
+
+            </div>
+            <div class="form-group">
+              <label >jobe</label>
+              <input type="text" class="form-control"  placeholder="Enter votre jobe" formControlName="job">
+
+            </div>
+            <div class="form-group">
+              <label >citation favorite</label>
+              <input type="text" class="form-control"   placeholder="citation favorite" formControlName="citation">
+
+            </div>
+            <div class="form-group">
+              <label >décrivez  nous votre travail</label>
+              <input type="text" class="form-control"   placeholder="mots clé de votre travail" formControlName="travail">
+
+            </div>
+            <div class="form-group">
+              <label >mots clé de votre travail</label>
+              <input type="text" class="form-control"   placeholder="mots clé de votre travail" formControlName="cle">
+
+            </div>
+            <div class="form-group">
+              <label >image</label>
+              <input type="file" class="form-control"  formControlName="img" >
+
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+          <pre>
+  {{cartForm.value | json}}
+</pre>
+        </div>
       </div>
-      <div class="form-group">
-        <label >citation favorite</label>
-        <input type="text" class="form-control"   placeholder="citation favorite">
-       
-      </div>
-      <div class="form-group">
-        <label >décrivez  nous votre travail</label>
-        <input type="text" class="form-control"   placeholder="mots clé de votre travail">
-       
-      </div>
-      <div class="form-group">
-        <label >mots clé de votre travail</label>
-        <input type="text" class="form-control"   placeholder="mots clé de votre travail">
-       
-      </div>
-      <div class="form-group">
-        <label >image</label>
-        <input type="file" class="form-control"  >
-       
-      </div>
-    <button type="submit" class="btn btn-primary">Submit</button>
-  </form>
+  <div class="space-200"></div>
+</div>
+
+  </div>
+</div>
