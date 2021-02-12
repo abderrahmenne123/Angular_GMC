@@ -6,6 +6,7 @@ import {Component, Input, EventEmitter, OnInit, Output} from '@angular/core';
   styleUrls: ['./fils.component.css']
 })
 export class FilsComponent implements OnInit {
+ // parentColor="blue";
   @Input()  dataParent: string | undefined;
   @Input() parentColor: any ;
   @Output() sendDataFromSon = new EventEmitter();
@@ -18,6 +19,10 @@ export class FilsComponent implements OnInit {
     * OutPut
     *  */
 
+  }
+  changeColor() {
+    //console.log(newName);
+    this.parentColor="blue";
   }
  /* sendDataToFather(){
     this.sendDataFromSon.emit('Hello je suis ton fils');

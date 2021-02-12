@@ -16,6 +16,7 @@ import { MyCheckpointsComponent } from './my-checkpoints/my-checkpoints.componen
 import { CarteVisiteComponent } from './carte-visite/carte-visite.component';
 import { PereComponent } from './pere/pere.component';
 import { FilsComponent } from './fils/fils.component';
+import { MyFavoritColorComponent } from './my-favorit-color/my-favorit-color.component';
 
 
 @NgModule({
@@ -36,6 +37,8 @@ import { FilsComponent } from './fils/fils.component';
     PereComponent,
 
     FilsComponent,
+
+    MyFavoritColorComponent,
 
 
   ],

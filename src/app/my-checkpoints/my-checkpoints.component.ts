@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MyCheckpointsComponent implements OnInit {
   color ='[blue,green,orange,yellow,black,grey,pink]';
- 
+
   constructor() { }
 
   ngOnInit(): void {
