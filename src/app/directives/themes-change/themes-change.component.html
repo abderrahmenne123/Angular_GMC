@@ -1,4 +1,16 @@
+
+<input type="text" appRainbow>
+
+<br>
+<br>
+<p appHighlightt></p>
+<br>
+<br>
+
 <p
+  appHighlightt
+  [in]="'blue'"
+  [out]="'pink'"
 [ngClass]="{
 theme1:theme === 'theme1',
 theme2:theme === 'theme2',
@@ -7,6 +19,11 @@ theme3:theme === 'theme3'
 
 
 >themes-change works!</p>
+<div appHighlightt
+[in]="'lightgray'"
+[out]="'purple'"
+
+>abderrahmenne zorgati</div>
 <button (click)="changeTheme('theme1')" class="btn btn-primary">
   Theme1
 </button>

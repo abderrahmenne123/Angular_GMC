@@ -22,6 +22,7 @@ import { NgClassExpComponent } from './directives/ng-class-exp/ng-class-exp.comp
 import { MiniWordComponent } from './directives/mini-word/mini-word.component';
 import { HighlighttDirective } from './directives/highlightt.directive';
 import { ThemesChangeComponent } from './directives/themes-change/themes-change.component';
+import { RainbowDirective } from './directive/rainbow.directive';
 
 
 @NgModule({
@@ -54,6 +55,8 @@ import { ThemesChangeComponent } from './directives/themes-change/themes-change.
     HighlighttDirective,
 
     ThemesChangeComponent,
+
+    RainbowDirective,
 
 
 
