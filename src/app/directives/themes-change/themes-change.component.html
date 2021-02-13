@@ -1,0 +1,18 @@
+<p
+[ngClass]="{
+theme1:theme === 'theme1',
+theme2:theme === 'theme2',
+theme3:theme === 'theme3'
+}"
+
+
+>themes-change works!</p>
+<button (click)="changeTheme('theme1')" class="btn btn-primary">
+  Theme1
+</button>
+<button (click)="changeTheme('theme2')" class="btn btn-primary">
+  Theme2
+</button>
+<button (click)="changeTheme('theme3')" class="btn btn-primary">
+  Theme3
+</button>

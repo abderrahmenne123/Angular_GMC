@@ -20,6 +20,8 @@ import { MyFavoritColorComponent } from './my-favorit-color/my-favorit-color.com
 import { NgStyleExempleComponent } from './directive/ng-style-exemple/ng-style-exemple.component';
 import { NgClassExpComponent } from './directives/ng-class-exp/ng-class-exp.component';
 import { MiniWordComponent } from './directives/mini-word/mini-word.component';
+import { HighlighttDirective } from './directives/highlightt.directive';
+import { ThemesChangeComponent } from './directives/themes-change/themes-change.component';
 
 
 @NgModule({
@@ -48,6 +50,12 @@ import { MiniWordComponent } from './directives/mini-word/mini-word.component';
     NgClassExpComponent,
 
     MiniWordComponent,
+
+    HighlighttDirective,
+
+    ThemesChangeComponent,
+
+
 
 
   ],
