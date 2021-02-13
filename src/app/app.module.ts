@@ -19,6 +19,7 @@ import { FilsComponent } from './fils/fils.component';
 import { MyFavoritColorComponent } from './my-favorit-color/my-favorit-color.component';
 import { NgStyleExempleComponent } from './directive/ng-style-exemple/ng-style-exemple.component';
 import { NgClassExpComponent } from './directives/ng-class-exp/ng-class-exp.component';
+import { MiniWordComponent } from './directives/mini-word/mini-word.component';
 
 
 @NgModule({
@@ -45,6 +46,8 @@ import { NgClassExpComponent } from './directives/ng-class-exp/ng-class-exp.comp
     NgStyleExempleComponent,
 
     NgClassExpComponent,
+
+    MiniWordComponent,
 
 
   ],
