@@ -17,6 +17,8 @@ import { CarteVisiteComponent } from './carte-visite/carte-visite.component';
 import { PereComponent } from './pere/pere.component';
 import { FilsComponent } from './fils/fils.component';
 import { MyFavoritColorComponent } from './my-favorit-color/my-favorit-color.component';
+import { NgStyleExempleComponent } from './directive/ng-style-exemple/ng-style-exemple.component';
+import { NgClassExpComponent } from './directives/ng-class-exp/ng-class-exp.component';
 
 
 @NgModule({
@@ -39,6 +41,10 @@ import { MyFavoritColorComponent } from './my-favorit-color/my-favorit-color.com
     FilsComponent,
 
     MyFavoritColorComponent,
+
+    NgStyleExempleComponent,
+
+    NgClassExpComponent,
 
 
   ],
