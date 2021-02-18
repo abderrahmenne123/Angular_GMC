@@ -23,6 +23,8 @@ import { MiniWordComponent } from './directives/mini-word/mini-word.component';
 import { HighlighttDirective } from './directives/highlightt.directive';
 import { ThemesChangeComponent } from './directives/themes-change/themes-change.component';
 import { RainbowDirective } from './directive/rainbow.directive';
+import { NgforExampleComponent } from './directives/ngfor-example/ngfor-example.component';
+import { ShowParagraphComponent } from './show-paragraph/show-paragraph.component';
 
 
 @NgModule({
@@ -57,6 +59,10 @@ import { RainbowDirective } from './directive/rainbow.directive';
     ThemesChangeComponent,
 
     RainbowDirective,
+
+    NgforExampleComponent,
+
+    ShowParagraphComponent,
 
 
 

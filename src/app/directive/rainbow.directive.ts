@@ -4,8 +4,8 @@ import {Directive, HostBinding, HostListener} from '@angular/core';
   selector: '[appRainbow]'
 })
 export class RainbowDirective {
-@HostBinding('style.color') color;
-@HostBinding('style.color') bc;
+@HostBinding('style.color') color: string | undefined;
+@HostBinding('style.color') bc: string | undefined ;
 generateRandomColor(): string {
   return '#' + Math.floor(Math.random() * 16777215).toString(16);
 }
