@@ -30,6 +30,9 @@ import { DefaultImagePipe } from './default-image.pipe';
 import { CvComponent } from './CV/cv/cv.component';
 import { DetailComponent } from './CV/detail/detail.component';
 import { ListComponent } from './CV/list/list.component';
+import { AppCvComponent } from './CVngFor/app-cv/app-cv.component';
+import { AppListComponent } from './CVngFor/app-list/app-list.component';
+import { AppDetailComponent } from './CVngFor/app-detail/app-detail.component';
 
 
 
@@ -78,7 +81,13 @@ import { ListComponent } from './CV/list/list.component';
 
     DetailComponent,
 
-    ListComponent
+    ListComponent,
+
+    AppCvComponent,
+
+    AppListComponent,
+
+    AppDetailComponent
 
 
 
