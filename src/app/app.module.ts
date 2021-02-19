@@ -34,6 +34,7 @@ import { AppCvComponent } from './CVngFor/app-cv/app-cv.component';
 import { AppListComponent } from './CVngFor/app-list/app-list.component';
 import { AppDetailComponent } from './CVngFor/app-detail/app-detail.component';
 import { TodoComponent } from './todo/todo.component';
+import { EmbaucheComponent } from './CV/embauche/embauche.component';
 
 
 
@@ -90,7 +91,9 @@ import { TodoComponent } from './todo/todo.component';
 
     AppDetailComponent,
 
-    TodoComponent
+    TodoComponent,
+
+    EmbaucheComponent
 
 
 

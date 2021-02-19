@@ -15,15 +15,18 @@ private todos: Todo[] = [];
   getTodos(): Todo[]{
     return  this.todos;
   }
+  // tslint:disable-next-line:typedef
   addTodo(todo: Todo){
     this.todos.push(todo);
   }
+  // tslint:disable-next-line:typedef
   deleteTodo(todo: Todo){
     const index = this.todos.indexOf(todo);
     if (index > -1){
       this.todos.splice(index, 1);
     }
   }
+  // tslint:disable-next-line:typedef
   loggerTodo(){
   this.loggerService.logger(this.todos);
   }

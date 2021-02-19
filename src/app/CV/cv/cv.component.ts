@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import {Personne} from '../../model/Personne';
 import {LoggerService} from '../../services/logger.service';
 import {FirstServiceService} from '../../services/first-service.service';
+import {CvService} from '../services/cv.service';
 
 @Component({
   selector: 'app-cv',
@@ -13,26 +14,20 @@ export class CvComponent implements OnInit {
   selectedPersonne: Personne |undefined;
 
   constructor(
-   private loggerService: LoggerService ,
-   private firstService: FirstServiceService
+   private cvService: CvService
   ) { }
 
   ngOnInit(): void {
-    this.loggerService.logger('salut CV ');
-    this.firstService.logger();
-    this.personnes = [
-      new Personne (3, 'gharbi', 'faten', 26, 13490128, 'ingénieurs', 'tim_logo.png'),
-      new Personne (0, 'zorgati', 'abderrahmenne', 25, 12813470, 'ingénieur', 'aa.jpg'),
-      new Personne (2, 'bellil', 'mony', 26, 12813499, 'ingénieurs', 'rotating_card_profile.png'),
-    ];
+
+this.personnes = this.cvService.getPersonnes();
   }
 
 
   // tslint:disable-next-line:typedef
-  selectPersonne(personne) {
+  selectPersonne(personne: Personne | undefined) {
 
     this.selectedPersonne = personne;
-    this.loggerService.info('je viens de selectionner');
+
 
   }
 }

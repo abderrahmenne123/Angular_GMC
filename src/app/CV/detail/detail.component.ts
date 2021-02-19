@@ -1,5 +1,6 @@
 import {Component, Input, OnInit} from '@angular/core';
 import {Personne} from '../../model/Personne';
+import {EmbaucheService} from '../services/embauche.service';
 
 @Component({
   selector: 'app-detail',
@@ -9,9 +10,19 @@ import {Personne} from '../../model/Personne';
 export class DetailComponent implements OnInit {
 @Input() personne: Personne | undefined;
 
-  constructor() { }
+  constructor(
+    private embaucheService: EmbaucheService
+  ) { }
 
   ngOnInit(): void {
   }
 
+
+  // tslint:disable-next-line:typedef
+  embaucher() {
+
+    // @ts-ignore
+    this.embaucheService.embaucher(this.personne);
+
+  }
 }
