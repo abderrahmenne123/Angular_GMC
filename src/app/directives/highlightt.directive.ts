@@ -13,10 +13,10 @@ export class HighlighttDirective {
   }
 
   @HostListener('mouseenter') entre() {
-    this.bg = this.in;
+    this.bg = this.int;
 
   }
   @HostListener('mouseleave') leave(){
-    this.bg=this.out;
+    this.bg = this.out;
   }
 }

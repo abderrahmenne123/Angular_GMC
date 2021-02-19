@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./themes-change.component.css']
 })
 export class ThemesChangeComponent implements OnInit {
-theme='';
+theme = ' ';
   constructor() { }
 
   ngOnInit(): void {

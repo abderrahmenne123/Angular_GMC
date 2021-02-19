@@ -25,6 +25,12 @@ import { ThemesChangeComponent } from './directives/themes-change/themes-change.
 import { RainbowDirective } from './directive/rainbow.directive';
 import { NgforExampleComponent } from './directives/ngfor-example/ngfor-example.component';
 import { ShowParagraphComponent } from './show-paragraph/show-paragraph.component';
+import { PipeExempleComponent } from './pieps/pipe-exemple/pipe-exemple.component';
+import { DefaultImagePipe } from './default-image.pipe';
+import { CvComponent } from './CV/cv/cv.component';
+import { DetailComponent } from './CV/detail/detail.component';
+import { ListComponent } from './CV/list/list.component';
+
 
 
 @NgModule({
@@ -63,6 +69,18 @@ import { ShowParagraphComponent } from './show-paragraph/show-paragraph.componen
     NgforExampleComponent,
 
     ShowParagraphComponent,
+
+    PipeExempleComponent,
+
+    DefaultImagePipe,
+
+    CvComponent,
+
+    DetailComponent,
+
+    ListComponent
+
+
 
 
 
