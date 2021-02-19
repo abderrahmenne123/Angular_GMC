@@ -33,6 +33,7 @@ import { ListComponent } from './CV/list/list.component';
 import { AppCvComponent } from './CVngFor/app-cv/app-cv.component';
 import { AppListComponent } from './CVngFor/app-list/app-list.component';
 import { AppDetailComponent } from './CVngFor/app-detail/app-detail.component';
+import { TodoComponent } from './todo/todo.component';
 
 
 
@@ -87,7 +88,9 @@ import { AppDetailComponent } from './CVngFor/app-detail/app-detail.component';
 
     AppListComponent,
 
-    AppDetailComponent
+    AppDetailComponent,
+
+    TodoComponent
 
 
 

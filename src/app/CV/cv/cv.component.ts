@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {Personne} from '../../model/Personne';
+import {LoggerService} from '../../services/logger.service';
+import {FirstServiceService} from '../../services/first-service.service';
 
 @Component({
   selector: 'app-cv',
@@ -7,11 +9,17 @@ import {Personne} from '../../model/Personne';
   styleUrls: ['./cv.component.css']
 })
 export class CvComponent implements OnInit {
-  personnes: Personne[];
-  selectedPersonne: Personne;
-  constructor() { }
+  personnes: Personne[] |undefined;
+  selectedPersonne: Personne |undefined;
+
+  constructor(
+   private loggerService: LoggerService ,
+   private firstService: FirstServiceService
+  ) { }
 
   ngOnInit(): void {
+    this.loggerService.logger('salut CV ');
+    this.firstService.logger();
     this.personnes = [
       new Personne (3, 'gharbi', 'faten', 26, 13490128, 'ingénieurs', 'tim_logo.png'),
       new Personne (0, 'zorgati', 'abderrahmenne', 25, 12813470, 'ingénieur', 'aa.jpg'),
@@ -22,8 +30,9 @@ export class CvComponent implements OnInit {
 
   // tslint:disable-next-line:typedef
   selectPersonne(personne) {
-    //console.log(selectedPersonne);
+
     this.selectedPersonne = personne;
+    this.loggerService.info('je viens de selectionner');
 
   }
 }

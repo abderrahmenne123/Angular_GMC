@@ -7,7 +7,7 @@ import {Personne} from '../../model/Personne';
   styleUrls: ['./app-list.component.css']
 })
 export class AppListComponent implements OnInit {
-  @Input() personnes: Personne[];
+  @Input() personnes: Personne[] | undefined;
   @Output() selectedPersonne = new EventEmitter();
   constructor() { }
 

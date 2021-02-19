@@ -7,7 +7,7 @@ import {Personne} from '../../model/Personne';
   styleUrls: ['./app-detail.component.css']
 })
 export class AppDetailComponent implements OnInit {
-  @Input() personne: Personne ;
+  @Input() personne: Personne | undefined ;
   constructor() { }
 
   ngOnInit(): void {

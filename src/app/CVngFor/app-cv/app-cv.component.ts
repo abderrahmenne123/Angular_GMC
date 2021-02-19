@@ -7,8 +7,8 @@ import {Personne} from '../../model/Personne';
   styleUrls: ['./app-cv.component.css']
 })
 export class AppCvComponent implements OnInit {
-  personnes: Personne[];
-  selectedPersonne: Personne;
+  personnes: Personne[] | undefined;
+  selectedPersonne: Personne | undefined;
   constructor() { }
 
   ngOnInit(): void {
@@ -20,7 +20,7 @@ export class AppCvComponent implements OnInit {
     ];
   }
 // tslint:disable-next-line:typedef
-  selectPersonne(personne) {
+  selectPersonne(personne: any) {
 
     this.selectedPersonne = personne;
 

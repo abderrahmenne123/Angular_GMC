@@ -10,7 +10,7 @@ import {Personne} from '../../model/Personne';
   styleUrls: ['./list.component.css']
 })
 export class ListComponent implements OnInit {
-@Input() personnes: Personne[];
+@Input() personnes: Personne[] |undefined;
 @Output() selectedPersonne = new EventEmitter();
 // personne: Personne;
   constructor() { }
